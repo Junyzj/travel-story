@@ -3,16 +3,16 @@ let image1 = document.getElementById("image1");
 let image2 = document.getElementById("image2");
 let image3 = document.getElementById("image3");
 
-// Get the story text
+// Get the story title and text
 let storyTitle = document.getElementById("story-title");
 let storyText = document.getElementById("story-text");
 
-// Get the buttons
+// Get the two buttons
 let buttonOne = document.getElementById("sequence-one");
 let buttonTwo = document.getElementById("sequence-two");
 
 
-// Sequence One
+// Sequence One: Going on a Trip
 function showSequenceOne() {
 
   image1.src = "images/image1.jpg";
@@ -23,14 +23,14 @@ function showSequenceOne() {
   image2.alt = "suitcase";
   image3.alt = "airport";
 
-  storyTitle.innerHTML = "Going on a Trip";
+  storyTitle.textContent = "Going on a Trip";
 
-  storyText.innerHTML =
-    "I leave home, pack my suitcase, and arrive at the airport to begin my trip.";
+  storyText.textContent =
+    "I get ready at home, pack my suitcase, and arrive at the airport to begin my trip.";
 }
 
 
-// Sequence Two
+// Sequence Two: Going Home
 function showSequenceTwo() {
 
   image1.src = "images/image3.jpg";
@@ -41,9 +41,9 @@ function showSequenceTwo() {
   image2.alt = "suitcase";
   image3.alt = "home";
 
-  storyTitle.innerHTML = "Going Home";
+  storyTitle.textContent = "Going Home";
 
-  storyText.innerHTML =
+  storyText.textContent =
     "My trip is over. I leave the airport with my suitcase and finally return home.";
 }
 
