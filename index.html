@@ -6,47 +6,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Travel Story</title>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <h1>Travel Story</h1>
+  <main class="container">
 
-  <p>
-    The same three images can tell two different stories.
-  </p>
+    <h1>Travel Story</h1>
 
-  <img
-    id="image1"
-    src="images/image1.jpg"
-    alt="home"
-    height="300"
-  />
+    <p class="intro">
+      The same three images can tell two different stories.
+      Choose a sequence to see how the meaning changes.
+    </p>
 
-  <img
-    id="image2"
-    src="images/image2.jpg"
-    alt="suitcase"
-    height="300"
-  />
+    <h2 id="story-title">Going on a Trip</h2>
 
-  <img
-    id="image3"
-    src="images/image3.jpg"
-    alt="airport"
-    height="300"
-  />
+    <div class="image-container">
 
-  <br />
-  <br />
+      <div class="image-box">
+        <p>Beginning</p>
 
-  <button id="sequence-one">
-    Going on a Trip
-  </button>
+        <img
+          id="image1"
+          src="images/image1.jpg"
+          alt="home"
+        />
+      </div>
 
-  <button id="sequence-two">
-    Going Home
-  </button>
+      <div class="image-box">
+        <p>Middle</p>
+
+        <img
+          id="image2"
+          src="images/image2.jpg"
+          alt="suitcase"
+        />
+      </div>
+
+      <div class="image-box">
+        <p>End</p>
+
+        <img
+          id="image3"
+          src="images/image3.jpg"
+          alt="airport"
+        />
+      </div>
+
+    </div>
+
+    <p id="story-text">
+      I leave home, pack my suitcase, and arrive at the airport to begin my trip.
+    </p>
+
+    <div class="buttons">
+
+      <button id="sequence-one">
+        Going on a Trip
+      </button>
+
+      <button id="sequence-two">
+        Going Home
+      </button>
+
+    </div>
+
+  </main>
 
   <script src="script.js"></script>
 
